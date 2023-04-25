@@ -17,10 +17,12 @@ void main()
 	{
 		fact=1;
 		j=1;
-		while(j<=a[i]){
+		while(j<=a[i])
+		{
 		
 		fact=fact*j;
-		j++;}
+		j++;
+		}
 		P("factorial of a[%d] : %d =%d\n",i,a[i],fact);
 	}
 	
