@@ -10,7 +10,7 @@ void main()
 	P("enter number of colmn :");
 	scanf("%d",&c);
 	
-	int a[r][c],b[r][c],s[r][c],i,j,sum =0;
+	int a[r][c],b[r][c],i,j,sum =0;
 	
 	for(i=0;i<r;i++)
 	{
@@ -39,19 +39,15 @@ void main()
 			
 			P("%d ",b[i][j]);
 	
-			s[r][c] = a[i][j] + b[i][j];
+			sum = sum + a[i][j] + b[i][j];
 			
 		
-		} P("\n");  
+		} P("\n"); 
+		 
 	}	  P("\n");
+			
+			P("sum :%d",sum);
 		
-	for(i=0;i<r;i++)
-	{
-		for(j=0;j<c;j++)
-		{
-				P(" %d",s[r][c]);
-		}
-		P("\n");
-	}
+	
 	
 }
