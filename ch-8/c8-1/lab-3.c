@@ -18,15 +18,15 @@ void main()
 		sum = sum + a[i];
 		average = sum / count;
 		
+		
 	}
-	for(i=0;i<n;i++)
-	{
+	
+	
+
 		P(" \n length of array :%d",count);
 		P("\n sum :%d",sum);
 		P("\n  average : %d",average);
 	
-		
-	}
 	
 	
 
