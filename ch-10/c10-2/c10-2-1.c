@@ -1,14 +1,17 @@
+			//create infinite calc using UDF, switch case and Loop.
+
 #include<stdio.h>
+#include<conio.h>
 #define P printf
 
-void main()
+int calc()
 {
 	int choice,a,b;
 	do
 	{
 		
-		P("\t\t\twelcom in the system");
-		clrscr();
+		P("\t\t\twelcom in the system\n\n");
+		
 		P("1=>   addition\n");
 		P("2=>   subtraction\n");
 		P("3=>   multiplication\n");
@@ -17,7 +20,6 @@ void main()
 		P("6=>   exit\n\n\n");
 		P("\t\t\tenter your choice  :");
 		scanf("%d",&choice);
-		clrscr();
 
 		switch(choice)
 		{
@@ -29,7 +31,6 @@ void main()
 				P("addition  :%d",a+b);
 				getch();
 				break;
-				clrscr();
 
 			case 2:
 				P("A:");
@@ -39,7 +40,6 @@ void main()
 				P("subtraction  :%d",a-b);
 				getch();
 				break;
-				clrscr();
 
 			case 3:
 				P("A:");
@@ -49,7 +49,6 @@ void main()
 				P("mutiplication  :%d",a*b);
 				getch();
 				break;
-				clrscr();
 
 			case 4:
 				P("A:");
@@ -59,7 +58,6 @@ void main()
 				P("division  :%d",a/b);
 				getch();
 				break;
-				clrscr();
 
 			case 5:
 				P("A:");
@@ -69,7 +67,6 @@ void main()
 				P("modulos  :%d",a%b);
 				getch();
 				break;
-				clrscr();
 
 			case 6:
 				break;
@@ -81,5 +78,16 @@ void main()
 	P("\n\n\n\n\t\t\t\t-------------------\n");
 	P("\t\t\t\t||thanks to coming||\n");
 	P("\t\t\t\t-------------------");
+
+	return(a,b);
+}
+
+void main()
+{
+	calc();
+	
 	
 }
+
+
+
