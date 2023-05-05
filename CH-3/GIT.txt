@@ -1,0 +1,31 @@
+1. Localization
+	- git init
+	- creates local [.git] folder which contains git credentials ans path variables.
+	- git remote add [varName]<origin> [repoLink]
+
+2. Add Credentials
+	- git config [--global] user.name "YourUserName"
+	- git config [--global] user.email "your@email.address"
+
+	- If multiple user's are using Github from this device then it can give following error
+		Error: Push permission denied to user1 from user2.
+	- Then you've to add credentials using folloeing commands again
+	- git config credential.username "YourUserName"
+	- git config credential.email "your@email.address"
+
+3. Upload file/folder
+	- git add [ . | file.name | folderName]
+		- '.' will add all items from current local folder
+		- file.name will only add desired file as similar as folderName.
+	- git commit -m "YourMessageForFile"
+	- git push -u [varName]<origin> [BranchName]<master>
+
+4. Check status of current folder
+	- git status
+		- will inform if any changes are yet remained to commit(combine||update)
+
+5. Download Online Repository
+	- git pull [ RepoLink ]
+
+6. Check Origins in current Local Folder
+	- git remote -v
